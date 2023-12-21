@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    margin-top: 100px; /* 为了避免广告覆盖内容，设置一个顶部边距 */
+}
+
+#ad-container {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none; /* 初始时隐藏广告 */
+    z-index: 1000; /* 确保广告在其他元素之上 */
+}
