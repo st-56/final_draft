@@ -129,20 +129,22 @@ header{
     font-weight: 400px;
 }
 
-.contact {
-	height:750px;
+.information {
+	height: 600px;
 	padding-top: 30px;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: top center;
+    font-size: 18px;
+    font-weight: 500;
 }
 
-.contact .title {
+.information .title {
 	color:#ffffff;
 }
 
-.contact .form {
+.information .form {
 	max-width: 600px;
 	margin:0 auto;
 	padding: 0 30px;
@@ -150,7 +152,7 @@ header{
 }
 
 .form input {
-	height: 40px;
+	height: 30px;
 	width: 100%;
 	background-color: #ffffff;
 	border-radius: 5px;
@@ -173,16 +175,85 @@ header{
 	margin:7.5px 0;
 }
 
-input[type=submit] {
-  background-color: #ABD0CE;
+.upload input[type=submit] {
+  background-color: gray;
   color: white;
   cursor: pointer;
   width: 100px!important;
   height: 48px;
+  font-size: 16px;
+  font-weight: 500;
 }
 
-input[type=submit]:hover {
-  background-color: #8ABCB8;
+.upload input[type=submit]:hover {
+  background-color: darkgray;
+}
+
+.handin input[type=submit] {
+    background-color: #33d8d0;
+    color: white;
+    cursor: pointer;
+    width: 100px!important;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.handin input[type=submit]:hover {
+    background-color: #8ABCB8;
+}
+
+#openqa{
+    color: black;
+}
+
+.ansqa {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+  
+.send {
+    background-color: #fff;
+    width: 50%;
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    position: relative;
+    color: black;
+}
+  
+.closeqa {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.ans{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    background-color: plum;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    height: 80px;
+    width: 200px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+button:hover{
+    background-color: darkmagenta;
 }
 
 /*
@@ -373,6 +444,7 @@ input[type=submit]:hover {
 }
 */
 
+/*
 .qa{
     color: white;
 }
@@ -405,6 +477,7 @@ input[type=submit]:hover {
     border: 2px solid orange;
     padding: 20px 15px 20px 15px;
 }
+*/
 
 .cheer1{
     margin-top: 50px;
