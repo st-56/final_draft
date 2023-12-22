@@ -79,7 +79,16 @@
 							<div>
 								<input type="text" placeholder="發現的地點 : X X 樓">
 							</div>
-                            <div class="text-center upload"><input type="file" value="上傳照片"></div>
+                            <div class="text-center upload">
+                                <label class="input-label" for="input-file">
+                                    照片上傳:
+                                </label>
+                                <input class="input-file" type='file' id="input-file" />
+                            </div>
+                            <p class="upload-filename" id="upload-filename"></p>
+                            <button type="button" class="btn col-sm-12 btn-info shadow" id="btnUpload">
+                                上傳
+                            </button>
 							<div>
 								<textarea placeholder="更多回覆"></textarea>
 							</div>
@@ -89,6 +98,7 @@
 				</div>
 			</div>
 		</div>
+        <!--
         <div class="ans">
             <button id="openqa">常見疑問 Q & A</button>
                 <div id="ansqa" class="ansqa">
@@ -120,6 +130,7 @@
                     </div>
                 </div>
         </div>
+        -->
         <!--
             <div class="form">
                 <div class="box1">
@@ -139,48 +150,48 @@
                 </div>
             </div>
         --->
-        <!--
+        <hr class="sep-line">
         <div class="qa">
-            <div class="sidebar">
                 <div class="qs">
-                    <p>
+                    <h3>
                         常見疑問Q&A
-                    </p>
+                    </h3>
                 </div>
+            <div class="sidebar">
                 <div class="q1">
+                    <h4>Q1:發現怪獸在攻擊人該怎麼辦?</h4>
                     <p>
-                        Q1:發現怪獸在攻擊人該怎麼辦?<br>
-                        A1:紀錄時間、地點，拍下證據照片，<br>
-                        上傳到網站讓我們處理!<br>
-                        千萬不要上前逞能制止，<br>
+                        A1:紀錄時間、地點，拍下證據照片，
+                        上傳到網站讓我們處理!
+                        千萬不要上前逞能制止，
                         以免增加傷亡人數。
                     </p>
                 </div>
                 <div class="q2">
+                    <h4>Q2:我的個資會不會被公開?</h4>
                     <p>
-                        Q2:我的個資會不會被公開?<br>
-                        A2:不會!我們是完全匿名的網站，<br>
-                        且有專業的程式師，用最強大的<br>
+                        A2:不會!我們是完全匿名的網站，
+                        且有專業的程式師，用最強大的
                         安全防護保護您的隱私!
                     </p>
                 </div>
                 <div class="q3">
-                    <p>
-                        Q3:我可以加入怪獸追緝局嗎?<br>
-                        A3:可以!我們會不定期招募新成員，<br>
-                        還請注意我們的最新消息，<br>
+                    <h4>Q3:我可以加入怪獸追緝局嗎?</h4>
+                    <p>    
+                        A3:可以!我們會不5定期招募新成員，
+                        還請注意我們的最新消息，
                         期待日後與您並肩作戰!
                     </p>
                 </div>
-                <div class="q4">
-                    <p>
-                        若有更多疑問，歡迎致電，<br>
-                        或用電子信箱與我們聯絡!
-                    </p>
-                </div>
             </div>
+                <div class="q4">
+                    <h3>
+                        若有更多疑問，歡迎致電，
+                        或用電子信箱與我們聯絡!
+                    </h3>
+                </div>
         </div>
-        -->
+        <hr class="sep-line">
     <div class="cheer1">
         <h3 class="word1">打擊犯罪，人人有責!</h3>
     </div>
@@ -193,6 +204,7 @@
     </div>
     <script src="./mail_qa.js"></script>
     <script src="./firebase_photo.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script type="module">
         // Import the functions you need from the SDKs you need
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
