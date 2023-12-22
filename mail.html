@@ -68,7 +68,7 @@
         </div>
         -->
 
-        <div class="contact" id="section3">
+        <div class="information" id="section3">
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
@@ -77,18 +77,49 @@
 								<input type="text" placeholder="發現的怪獸 : X X 怪">
 							</div>
 							<div>
-								<input type="email" placeholder="發現的地點 : X X 樓">
+								<input type="text" placeholder="發現的地點 : X X 樓">
 							</div>
-                            <div class="text-center"><input type="submit" value="上傳照片"></div>
+                            <div class="text-center upload"><input type="file" value="上傳照片"></div>
 							<div>
 								<textarea placeholder="更多回覆"></textarea>
 							</div>
-							<div class="text-center"><input type="submit" value="提交"></div>
+							<div class="text-center handin"><input type="submit" value="提交"></div>
 						</div>	
 					</div>
 				</div>
 			</div>
 		</div>
+        <div class="ans">
+            <button id="openqa">常見疑問 Q & A</button>
+                <div id="ansqa" class="ansqa">
+                    <div class="send">
+                        <span class="closeqa" id="closeqa">&times;</span>
+                            <h2>Q1:發現怪獸在攻擊人該怎麼辦?</h2>
+                            <p>
+                                A1:紀錄時間、地點，拍下證據照片，
+                                上傳到網站讓我們處理!
+                                千萬不要上前逞能制止，
+                                以免增加傷亡人數。
+                            </p>
+                            <h2>Q2:我的個資會不會被公開?</h2>
+                            <p>
+                                A2:不會!我們是完全匿名的網站，
+                                且有專業的程式師，用最強大的
+                                安全防護保護您的隱私!
+                            </p>
+                            <h2>Q3:我可以加入怪獸追緝局嗎?</h2>
+                            <p>
+                                A3:可以!我們會不定期招募新成員，
+                                還請注意我們的最新消息，
+                                期待日後與您並肩作戰!
+                            </p>
+                            <h3>
+                                若有更多疑問，歡迎致電，
+                                或用電子信箱與我們聯絡!
+                            </h3>
+                    </div>
+                </div>
+        </div>
         <!--
             <div class="form">
                 <div class="box1">
@@ -108,6 +139,7 @@
                 </div>
             </div>
         --->
+        <!--
         <div class="qa">
             <div class="sidebar">
                 <div class="qs">
@@ -148,7 +180,7 @@
                 </div>
             </div>
         </div>
-    </div>
+        -->
     <div class="cheer1">
         <h3 class="word1">打擊犯罪，人人有責!</h3>
     </div>
@@ -159,6 +191,27 @@
             您的支持與協助，是我們進步的動力!
         </p>
     </div>
+    <script src="./mail_qa.js"></script>
+    <script src="./firebase_photo.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyAtW4LN_b4sSxG5eOZNWafaMn8GNYyKNdY",
+          authDomain: "monsterpursuit.firebaseapp.com",
+          projectId: "monsterpursuit",
+          storageBucket: "monsterpursuit.appspot.com",
+          messagingSenderId: "1006124283828",
+          appId: "1:1006124283828:web:4e68f0b07562462689a4e1"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
 </body>
 <footer>
     <div class="contact">
