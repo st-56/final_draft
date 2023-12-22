@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./monster.css">
+    <link rel="stylesheet" type="text/css" href="./normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;900&family=Playpen+Sans:wght@400;700&display=swap" 
+          rel="stylesheet">
+    <title>monster</title>
+</head>
+<body>
+    <header>
+        <img src="./img/logo2.png" alt="logo" class="logo">
+        <ul class="nav">
+            <li><a href="home.html" class="nav_item">首頁</a></li>
+            <li><a href="about.html" class="nav_item">關於</a></li>
+            <li><a href="monster.html" class="nav_item">怪獸檔案</a></li>
+            <li><a href="mail.html" class="nav_item">通報</a></li>
+        </ul>
+    </header>
+    <hr class="line">
+    <!---<div class="logo">
+        <h1 class="name">monsters pursuit</h1>
+    </div>
+    <div class="nav">
+        <ul class="list">
+            <li class="item">
+                <a href="#" class="item-link">首頁</a> 
+            </li>
+            <li class="item">
+                <a href="#" class="item-link">最新消息</a>
+            </li>
+            <li class="item">
+                <a href="./monster.html" class="item-link">怪獸圖鑑</a>
+            </li>
+            <li class="item">
+                <a href="./mail.html" class="item-link">舉報信箱</a>
+            </li>
+            <li class="item">
+                <a href="#" class="item-link">同仁簡介</a>
+            </li>
+        </ul>
+    </div>
+    <hr class="line">--->
+    <div class="main">
+        <!--
+        <div class="sidebar">
+            <ol class="steal"><h3 class="rank">怪獸賞金排名</h3>
+                <li class="num">偷書怪</li>
+                <li class="num">躺平怪</li>
+                <li class="num">偷傘怪</li>
+                <li class="num">偷鞋怪</li>
+                <li class="num">偷窺怪</li>
+                <li class="num">盜腦怪</li>
+                <li class="num">偷吃怪</li>
+                <li class="num">邋遢怪</li>
+                <li class="num">臭嘴怪</li>
+                <li class="num">憂鬱怪</li>
+                <li class="num">伸手牌怪</li>
+                <li class="num">軟爛怪</li>
+            </ol>
+            <ol class="punish"><h3 class="money">賞金依據</h3>
+                <li class="num">急迫性</li>
+                <li class="num">嚴重性</li>
+                <li class="num">尋找難度</li>
+                <li class="num">珍稀程度</li>
+            </ol>
+            <ol class="way"><h3 class="get">如何獲得賞金</h3>
+                <li class="num">捕獲怪獸</li>
+                <li class="num">通報成功</li>
+            </ol>
+            <div class="ex">
+                <h3>此排名會定期更動!</h3>
+                <p>
+                    歡迎您踴躍抓捕怪獸，<br>
+                    幫自己賺錢、為社會除害!<br>
+                    <br>
+                    詳細資訊請閱讀網頁，<br>
+                    如果對此議題有興趣，<br>
+                    歡迎多多關注!<br>
+                    <br>
+                    提醒您留意最新消息，<br>
+                    才不會錯過我們的新通知喔!
+                </p>
+            </div>
+        </div>
+        -->
+        <div class="allpic">
+            <div class="pics1">
+                <div class="zone1">
+                    <img class="angle" src="./img/mud.jpg" alt="mud" width="300" height="330">
+                    <h3 class="mon">軟爛怪</h3>
+                    <button id="openexpl1">more</button>
+                    <div id="expl1" class="expl1">
+                        <div class="sent">
+                            <span class="close" id="closeexpl1">&times;</span>
+                            <h2>軟爛怪</h2>
+                            <p>
+                                軟爛怪是個沒有上進心的物種，<br>
+                                除了吃和睡，沒有事情能讓他提得起勁。<br>
+                                由於太chill的性格，導致自己成了一坨爛泥...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zone2">
+                    <img class="angle" src="./img/sleep.jpg" alt="sleep" width="300" height="330">
+                    <h3 class="mon">躺平怪</h3>
+                    <button id="openexpl2">more</button>
+                    <div id="expl2" class="expl2">
+                        <div class="sent">
+                            <span class="close" id="closeexpl2">&times;</span>
+                            <h2>躺平怪</h2>
+                            <p>
+                                躺平怪生性偷懶、好逸惡勞，<br>
+                                喜歡在分組作業時躺平，抱別人大腿。<br>
+                                時間久了引發眾怒，成為眾矢之的，<br>
+                                每個人都將他視為地雷般的存在。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zone3">
+                    <img class="angle" src="./img/brain.jpg" alt="brain" width="300" height="330">
+                    <h3 class="mon">盜腦怪</h3>
+                    <button id="openexpl3">more</button>
+                    <div id="expl3" class="expl3">
+                        <div class="sent">
+                            <span class="close" id="closeexpl3">&times;</span>
+                            <h2>盜腦怪</h2>
+                            <p>
+                                盜腦怪是個喜歡盜取別人腦袋想法的可怕物種，<br>
+                                因為自己懶得思考，經常瓢竊他人的作品。<br>
+                                你的創意可能會在不經意間流入他的手裡...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pics2">
+                <div class="zone4">
+                    <img class="angle" src="./img/book.jpg" alt="book" width="300" height="330">
+                    <h3 class="mon">偷書怪</h3>
+                    <button id="openexpl4">打開詳細介紹</button>
+                    <div id="expl4" class="expl4">
+                        <div class="sent">
+                            <span class="close" id="closeexpl4">&times;</span>
+                            <h2>偷書怪</h2>
+                            <p>
+                                偷書怪經常在圖書館埋伏，容易盯上正在認真讀書的學生。<br>
+                                在趁人不備時，把他看上的書整堆扛走。<br>
+                                聽說，他的手法拙劣，<br>
+                                曾在一次行動中，被正義之士發現，打趴在地。<br>
+                                至於他是否東山再起，仍未可知...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zone5">
+                    <img class="angle" src="./img/angry.jpg" alt="angry" width="300" height="330">
+                    <h3 class="mon">臭嘴怪</h3>
+                    <button id="openexpl5">打開詳細介紹</button>
+                    <div id="expl5" class="expl5">
+                        <div class="sent">
+                            <span class="close" id="closeexpl5">&times;</span>
+                            <h2>臭嘴怪</h2>
+                            <p>
+                                臭嘴怪喜歡口出惡言，<br>
+                                不但常常問候別人父母，也經常引發唇槍舌戰<br>
+                                由於出言不遜，在別人眼中成了流氓的形象。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zone6">
+                    <img class="angle" src="./img/shoe.jpg" alt="shoe" width="300" height="330">
+                    <h3 class="mon">偷鞋怪</h3>
+                    <button id="openexpl6">打開詳細介紹</button>
+                    <div id="expl6" class="expl6">
+                        <div class="sent">
+                            <span class="close" id="closeexpl6">&times;</span>
+                            <h2>偷鞋怪</h2>
+                            <p>
+                                偷鞋怪經常在球場徘徊，<br>
+                                假裝自己在運動，實則覬覦別人的鞋袋。<br>
+                                只要稍有不慎，球鞋就會不翼而飛...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pics3">
+                <div class="zone7">
+                    <img class="angle" src="./img/eat.jpg" alt="eat" width="300" height="330">
+                    <h3 class="mon">偷吃怪</h3>
+                    <button id="openexpl7">打開詳細介紹</button>
+                    <div id="expl7" class="expl7">
+                        <div class="sent">
+                            <span class="close" id="closeexpl7">&times;</span>
+                            <h2>偷吃怪</h2>
+                            <p>
+                                偷吃怪喜歡偷吃別人的東西，總覺得別人的食物比自己的香。<br>
+                                只要食物離開自己的視線，就有很大的機會慘遭他的毒手...<br>
+                                他經常在宿舍冰箱旁徘徊，趁著防守空虛時，快狠準取得目標物!<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zone8">
+                    <img class="angle" src="./img/emo.jpg" alt="emo" width="300" height="330">
+                    <h3 class="mon">憂鬱怪</h3>
+                    <button id="openexpl8">打開詳細介紹</button>
+                    <div id="expl8" class="expl8">
+                        <div class="sent">
+                            <span class="close" id="closeexpl8">&times;</span>
+                            <h2>憂鬱怪</h2>
+                            <p>
+                                憂鬱怪經常emo，全身上下散發著負面能量，<br>
+                                喜歡自怨自艾，感嘆著自己悲哀的人生...<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zone9">
+                    <img class="angle" src="./img/hand.jpg" alt="hand" width="300" height="330">
+                    <h3 class="mon">伸手牌怪</h3>
+                    <button id="openexpl9">打開詳細介紹</button>
+                    <div id="expl9" class="expl9">
+                        <div class="sent">
+                            <span class="close" id="closeexpl9">&times;</span>
+                            <h2>伸手牌怪</h2>
+                            <p>
+                                伸手牌怪是個讓學長姐頭痛的怪獸，最擅長動一張嘴。<br>
+                                不管多簡單的問題，都要一直問別人。<br>
+                                沒有自主搜尋資料的能力。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pics4">
+                <div class="zone10">
+                    <img class="angle" src="./img/hide.jpg" alt="hide" width="300" height="330">
+                    <h3 class="mon">偷窺怪</h3>
+                    <button id="openexpl10">打開詳細介紹</button>
+                    <div id="expl10" class="expl10">
+                        <div class="sent">
+                            <span class="close" id="closeexpl10">&times;</span>
+                            <h2>偷窺怪</h2>
+                            <p>
+                                偷窺怪喜歡躲在暗處，偷偷窺視外面的世界。<br>
+                                有著狗仔般的隱身能力，<br>
+                                你的一舉一動，說不定都在他的掌握之中...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zone11">
+                    <img class="angle" src="./img/umbrella.jpg" alt="umbrella" width="300" height="330">
+                    <h3 class="mon">偷傘怪</h3>
+                    <button id="openexpl11">打開詳細介紹</button>
+                    <div id="expl11" class="expl11">
+                        <div class="sent">
+                            <span class="close" id="closeexpl11">&times;</span>
+                            <h2>偷傘怪</h2>
+                            <p>
+                                偷傘怪通常在雨天時出沒，哪裡有傘，哪裡就有他。<br>
+                                經常在教室外面徘徊，伺機偷取自己喜歡的傘，並據為己有。<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zone12">
+                    <img class="angle" src="./img/dirty.jpg" alt="dirty" width="300" height="330">
+                    <h3 class="mon">邋遢怪</h3>
+                    <button id="openexpl12">打開詳細介紹</button>
+                    <div id="expl12" class="expl12">
+                        <div class="sent">
+                            <span class="close" id="closeexpl12">&times;</span>
+                            <h2>邋遢怪</h2>
+                            <p>
+                                邋遢怪是個生活白癡，諸多事情無法自理。<br>
+                                或許是爸爸媽媽的寶貝，就連簡單的家事都做不好。<br>
+                                住在宿舍時，不會洗澡、不會洗衣服、也不會倒垃圾<br>
+                                是種讓室友著實頭痛的怪獸。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./monster.js"></script>
+</body>
+<footer>
+    <div class="contact">
+        <img src="img/fb.png" alt="fb" class="icon">
+        <img src="img/ig.png" alt="ig" class="icon">
+        <img src="img/x.png" alt="x" class="icon">
+        <p class="mail">mail:monsterpursuit@gmail.com</p>
+    </div>
+    <p class="cr">copyright &copy; 2023 monsterpursuit</p>
+</footer>
+</html>
