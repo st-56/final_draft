@@ -219,71 +219,96 @@ header{
     background-color: darkgray;
 }
 
-.likeButton {
+.hateButton {
     cursor: pointer;
     background-color: #33d8d0;
     color: white;
-    width: 100px!important;
-    height: 40px;
+    width: 150px!important;
+    height: 50px;
     font-size: 20px;
     font-weight: 500;
     border: none;
-    border-radius: 20px;
+    border-radius: 30px;
+    margin-top: 20px;
 }
 
-.likeButton:hover{
+.hateButton:hover{
     background-color: #8ABCB8;
 }
 
 #chartContainer{
+    background-color: white;
+    color: orange;
+    height: 300px; 
+    width: 80%;
+    margin: 20px auto;
+    font-size: 16px;
+}
+
+.vote{
+    color: white;
+    font-weight: 500;
+}
+
+.vote-title{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 5px;
+}
+
+.vote-cont{
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+
+#hateCount1{
     color: white;
 }
 
-#likeCount1{
+#hateCount2{
     color: white;
 }
 
-#likeCount2{
+#hateCount3{
     color: white;
 }
 
-#likeCount3{
+#hateCount4{
     color: white;
 }
 
-#likeCount4{
+#hateCount5{
     color: white;
 }
 
-#likeCount5{
+#hateCount6{
     color: white;
 }
 
-#likeCount6{
+#hateCount7{
     color: white;
 }
 
-#likeCount7{
+#hateCount8{
     color: white;
 }
 
-#likeCount8{
+#hateCount9{
     color: white;
 }
 
-#likeCount9{
+#hateCount10{
     color: white;
 }
 
-#likeCount10{
+#hateCount11{
     color: white;
 }
 
-#likeCount11{
-    color: white;
-}
-
-#likeCount12{
+#hateCount12{
     color: white;
 }
 
