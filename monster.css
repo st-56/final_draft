@@ -203,7 +203,7 @@ header{
     border-radius: 10px;
 }
 
-button{
+.more{
     background-color: gray;
     color: white;
     cursor: pointer;
@@ -215,8 +215,76 @@ button{
     border-radius: 20px;
 }
 
-button:hover{
+.more:hover{
     background-color: darkgray;
+}
+
+.likeButton {
+    cursor: pointer;
+    background-color: #33d8d0;
+    color: white;
+    width: 100px!important;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    border-radius: 20px;
+}
+
+.likeButton:hover{
+    background-color: #8ABCB8;
+}
+
+#chartContainer{
+    color: white;
+}
+
+#likeCount1{
+    color: white;
+}
+
+#likeCount2{
+    color: white;
+}
+
+#likeCount3{
+    color: white;
+}
+
+#likeCount4{
+    color: white;
+}
+
+#likeCount5{
+    color: white;
+}
+
+#likeCount6{
+    color: white;
+}
+
+#likeCount7{
+    color: white;
+}
+
+#likeCount8{
+    color: white;
+}
+
+#likeCount9{
+    color: white;
+}
+
+#likeCount10{
+    color: white;
+}
+
+#likeCount11{
+    color: white;
+}
+
+#likeCount12{
+    color: white;
 }
 
 .allpic{
@@ -239,12 +307,6 @@ button:hover{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-}
-
-.illus{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
 
 .mon{
