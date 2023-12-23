@@ -109,8 +109,8 @@
                         </div>
                     </div>
                     <div>
-                        <button class="likeButton" onclick="like(1)">Person 1</button>
-                        <span id="likeCount1">0</span>
+                        <button class="hateButton" onclick="hate(1)">Hate軟爛怪</button>
+                        <span id="hateCount1">0</span>
                     </div>
                 </div>
                 <div class="zone2">
@@ -133,8 +133,8 @@
                         </div>
                     </div>
                     <div>
-                        <button class="likeButton" onclick="like(2)">Person 2</button>
-                        <span id="likeCount2">0</span>
+                        <button class="hateButton" onclick="hate(2)">Hate躺平怪</button>
+                        <span id="hateCount2">0</span>
                     </div>
                 </div>
                 <div class="zone3">
@@ -156,8 +156,8 @@
                         </div>
                     </div>
                     <div>
-                        <button class="likeButton" onclick="like(3)">Person 3</button>
-                        <span id="likeCount3">0</span>
+                        <button class="hateButton" onclick="hate(3)">Hate盜腦怪</button>
+                        <span id="hateCount3">0</span>
                     </div>
                 </div>
             </div>
@@ -183,8 +183,8 @@
                         </div>
                     </div>
                     <div>
-                        <button class="likeButton" onclick="like(4)">Person 4</button>
-                        <span id="likeCount4">0</span>
+                        <button class="hateButton" onclick="hate(4)">Hate偷書怪</button>
+                        <span id="hateCount4">0</span>
                     </div>
                 </div>
                 <div class="zone5">
@@ -206,8 +206,8 @@
                         </div>
                     </div>
                     <div>
-                        <button class="likeButton" onclick="like(5)">Person 5</button>
-                        <span id="likeCount5">0</span>
+                        <button class="hateButton" onclick="hate(5)">Hate臭嘴怪</button>
+                        <span id="hateCount5">0</span>
                     </div>
                 </div>
                 <div class="zone6">
@@ -229,8 +229,8 @@
                         </div>
                     </div>
                     <div>
-                        <button class="likeButton" onclick="like(6)">Person 6</button>
-                        <span id="likeCount6">0</span>
+                        <button class="hateButton" onclick="hate(6)">Hate偷鞋怪</button>
+                        <span id="hateCount6">0</span>
                     </div>
                 </div>
             </div>
@@ -254,8 +254,8 @@
                         </div>
                     </div>
                     <div>
-                        <button class="likeButton" onclick="like(7)">Person 7</button>
-                        <span id="likeCount7">0</span>
+                        <button class="hateButton" onclick="hate(7)">Hate偷吃怪</button>
+                        <span id="hateCount7">0</span>
                     </div>
                 </div>
                 <div class="zone8">
@@ -276,8 +276,8 @@
                         </div>
                     </div>
                     <div>
-                        <button class="likeButton" onclick="like(8)">Person 8</button>
-                        <span id="likeCount8">0</span>
+                        <button class="hateButton" onclick="hate(8)">Hate憂鬱怪</button>
+                        <span id="hateCount8">0</span>
                     </div>
                 </div>
                 <div class="zone9">
@@ -299,8 +299,8 @@
                         </div>
                     </div>
                     <div>
-                        <button class="likeButton" onclick="like(9)">Person 9</button>
-                        <span id="likeCount9">0</span>
+                        <button class="hateButton" onclick="hate(9)">Hate伸手牌怪</button>
+                        <span id="hateCount9">0</span>
                     </div>
                 </div>
             </div>
@@ -324,8 +324,8 @@
                         </div>
                     </div>
                     <div>
-                        <button class="likeButton" onclick="like(10)">Person 10</button>
-                        <span id="likeCount10">0</span>
+                        <button class="hateButton" onclick="hate(10)">Hate偷窺怪</button>
+                        <span id="hateCount10">0</span>
                     </div>
                 </div>
                 <div class="zone11">
@@ -346,8 +346,8 @@
                         </div>
                     </div>
                     <div>
-                        <button class="likeButton" onclick="like(11)">Person 11</button>
-                        <span id="likeCount11">0</span>
+                        <button class="hateButton" onclick="hate(11)">Hate偷傘怪</button>
+                        <span id="hateCount11">0</span>
                     </div>
                 </div>
                 <div class="zone12">
@@ -370,15 +370,21 @@
                         </div>
                     </div>
                     <div>
-                        <button class="likeButton" onclick="like(12)">Person 12</button>
-                        <span id="likeCount12">0</span>
+                        <button class="hateButton" onclick="hate(12)">Hate邋遢怪</button>
+                        <span id="hateCount12">0</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <hr class="line">
+    <div class="vote">
+        <h2 class="vote-title">人氣投票統計</h2>
+        <br>
+        <p class="vote-cont">快來幫討厭的怪獸投票!得票數可能會影響我們追捕的優先順序喔!</p>
+    </div>
     <!-- Chart container -->
-    <canvas id="chartContainer" style="height: 300px; width: 80%; margin: 20px auto;"></canvas>
+    <canvas id="chartContainer"></canvas>
     <script src="./monster_expl.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./monster_like.js"></script>
